@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>If Else Statement Project</h1>
+    <form onsubmit="demo(); return false;">
+        <label for="marks">Enter Your Percentage of Marks</label>
+        <input type="number" id="mark">
+        <input type="submit" value="Check">
+    </form>
+    <p id="result"></p>
+   <script>
+    function demo(){ 
+        let x= document.querySelector("#mark").value;
+        
+        
+        if (x>80) {
+                document.querySelector("#result")
+                    .innerHTML = "Excellent";
+
+            } else if (x<80 && x >=70) {
+                document.querySelector("#result")
+                    .innerHTML = "Very Good ";
+
+            } else if (x<70 && x >=60) {
+                document.querySelector("#result")
+                    .innerHTML = "Good";
+
+            } else if (x<60 && x >=50) {
+                document.querySelector("#result")
+                    .innerHTML = "Average";
+            }
+             else {
+                document.querySelector("#result")
+                    .innerHTML = "Fail";
+            }
+
+    }
+   </script>
+    
+</body>
+</html>
